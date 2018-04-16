@@ -1,0 +1,49 @@
+												Person
+------------------------------------------------------------
+-name: String 	| +g +s
+-address: String 	|	+g +s
+-phoneNumber: String | +g +s
+-emailAddress: String | +g +s
+------------------------------------------------------------
++Person(name: String, address: String, 
+	phoneNumber: String, emailAddress: String)
++toString()
+------------------------------------------------------------
+	
+	
+	Employee -> Person												Student -> Person
+---------------------    								----------------------------
+-office: int 			 | +g +s							-status: int
+-salary: double 	 | +g +s							+_FRESHMAN: int
+-dateHired: MyDate | +g +s							+_SOPHOMORE: int
+---------------------										+_JUNIOR: int
++Employee(person: Person, 							+_SENIOR: int
+	office: int, salary: double)					-_STATUS_NAMES: String[]
++Employee(name: String, 								----------------------------
+	address: String, phoneNumber: String, +Student(person: Person, status: int)
+	emailAddress: String,									+Student(name: String, address: String, 
+	office: int, salary: double)						phoneNumber: String, email: String,
++Employee(name: String, 									status: int)
+	address: String, phoneNumber: String,	+getStatus(): int
+	emailAddress: String,									+getStatusName(): String
+	office: int, salary: double, 					+toString(): String
+	dateHired : MyDate)										----------------------------
++toString(): String
+---------------------
+
+
+ Faculty -> Employee												Staff -> Employee
+-------------------------								-------------------------
+-rank: int       | +g +s								-title: String | +g +s
+-faculty: String | +g +s								-------------------------
+-------------------------								+Staff(employee: Employee, title: String)
++Faculty(employee: Employee, rank: int, +toString(): String
+	faculty: String)
++toString(): String
+-------------------------
+	
+	
+	
+	
+	
+	
