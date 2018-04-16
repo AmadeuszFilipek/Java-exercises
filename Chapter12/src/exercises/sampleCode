@@ -1,0 +1,17 @@
+public class Test
+{
+	public static void main(String[] args)
+	{
+		// Some statements
+		
+		while(true)
+		{
+			if (true)
+			{
+				//this should not be changed
+				int[] array = {1,2};
+				// some statement
+			}
+		}
+	}
+}
